@@ -1,0 +1,147 @@
+.app {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+
+.app-header {
+  color: #ead7d7;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.app-container {
+  box-shadow: 0 0 10px #ccc;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.display--inline-block {
+  display: inline-block;
+}
+
+.task-form {
+  background-color: #fefefe;
+  -webkit-box-shadow: inset 0 -8px 8px -8px #ccc;
+  -moz-box-shadow: inset 0 -8px 8px -8px #ccc;
+  box-shadow: inset 0 -8px 8px -8px #ccc;
+  box-sizing: border-box;
+  padding: 24px 12px;
+  text-align: left;
+}
+
+.task-form__input {
+  background-color: #fefefe;
+  border: 0;
+  font-size: 18px;
+  font-style: italic;
+  outline: none;
+  margin-left: 20px;
+  width: calc(100% - 52px);
+  vertical-align: text-bottom;
+}
+
+.task-list {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  padding: 20px 12px;
+  text-align: left;
+}
+
+.task-list__name {
+  color: #4d4d4d;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.task-list__name--completed {
+  color: #ccc;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.filter-container {
+  background: #fff;
+  color: #8a8a8a;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 12px;
+  text-align: left;
+}
+
+.filter__item-count {
+  color: #8a8a8a;
+  display: inline-block;
+  margin-right: 12px;
+  width: 20%;
+}
+
+.filter__status {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.filter__status--active {
+  border: 1px solid #ead7d7;
+  padding: 2px;
+}
+
+.filter__clear-completed {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  margin-top: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    padding: 40px 0;
+  }
+
+  .app-header {
+    margin-bottom: 40px;
+  }
+
+  .app-header h1 {
+    font-size: 64px;
+  }
+
+  .task-form {
+    padding: 24px;
+  }
+
+  .task-container {
+    padding: 20px 24px;
+  }
+
+  .filter-container {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
+  .filter__item-count {
+    width: 25%;
+  }
+
+  .filter__status {
+    margin-right: 24px;
+  }
+
+  .filter__status--active {
+    padding: 4px;
+  }
+
+  .filter__clear-completed {
+    margin-top: 5px;
+  }
+}
